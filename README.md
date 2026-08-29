@@ -4,10 +4,23 @@
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.extensions.enumerable.entities.named/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.extensions.enumerable.entities.named/actions/workflows/codeql.yml)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Extensions.Enumerable.Entities.Named
-### A collection of helpful Enumerable NamedEntity extension methods
+A collection of helpful Enumerable NamedEntity extension methods.
 
 ## Installation
 
-```
+```bash
 dotnet add package Soenneker.Extensions.Enumerable.Entities.Named
 ```
+
+## Quick start
+
+```csharp
+using Soenneker.Extensions.Enumerable.Entities.Named;
+
+// Given an existing IEnumerable<T>? named source:
+var result = source.ToIdNamePairs();
+```
+
+## Common operations
+
+- `ToIdNamePairs()` - Projects named entities into `IdNamePair` values containing only each entity's ID and name.
