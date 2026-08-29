@@ -12,11 +12,11 @@ namespace Soenneker.Extensions.Enumerable.Entities.Named;
 public static class EnumerableNamedEntitiesExtension
 {
     /// <summary>
-    /// Executes the to id name pairs operation.
+    /// Projects named entities into materialized identifier/name pairs.
     /// </summary>
-    /// <typeparam name="T">The T type.</typeparam>
-    /// <param name="source">The source.</param>
-    /// <returns>The result of the operation.</returns>
+    /// <typeparam name="T">The sequence element or result type.</typeparam>
+    /// <param name="source">The source sequence or query.</param>
+    /// <returns>A list of identifier/name pairs.</returns>
     [Pure]
     public static List<IdNamePair> ToIdNamePairs<T>(this IEnumerable<T>? source)
         where T : INamedEntity
