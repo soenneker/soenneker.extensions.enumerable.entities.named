@@ -4,7 +4,7 @@
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.extensions.enumerable.entities.named/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.extensions.enumerable.entities.named/actions/workflows/codeql.yml)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Extensions.Enumerable.Entities.Named
-Materializes `INamedEntity` sequences as lightweight `IdNamePair` lists.
+Extension methods for projecting and transforming sequences of `INamedEntity` objects into shapes suited to selectors, lookups, and API responses.
 
 ## Installation
 
